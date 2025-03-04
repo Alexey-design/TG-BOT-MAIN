@@ -12,7 +12,7 @@ import asyncio
 logging.basicConfig(level=logging.INFO)
 
 # Инициализация бота
-API_TOKEN = '7251257913:AAEX_l3ExUxT-Epz8zr-0ScBjs9tOF_bqDo'  # Замените на ваш токен
+API_TOKEN = '8095908870:AAHeTDeiL6L9xujI53oVZULu-SYZjoWTEbI'  # Замените на ваш токен
 bot = Bot(
     token=API_TOKEN,
     default=DefaultBotProperties(parse_mode=ParseMode.HTML))
