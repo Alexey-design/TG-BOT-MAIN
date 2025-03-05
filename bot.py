@@ -583,7 +583,12 @@ async def handle_theory_level_selection(message: Message, state: FSMContext) -> 
 
 # Запуск бота
 async def main() -> None:
-    await dp.start_polling(bot)
+    while True:
+        try:
+            await dp.start_polling(bot)
+        except Exception as e:
+            logging.error(f"Ошибка в боте: {e}")
+            await asyncio.sleep(5)  # Ждём 5 секунд перед повторным запуском
 
 if __name__ == "__main__":
     asyncio.run(main())
