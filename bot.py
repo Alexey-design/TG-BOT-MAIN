@@ -252,8 +252,6 @@ async def handle_task_action(message: Message, state: FSMContext) -> None:
             )
             await message.answer(info)
         
-
-
     elif message.text == "Теория":
         if task_number == 1:
             await message.answer("Теория для задания 1: https://skyteach.ru/informatika/ege-po-informatike-teoriya-grafov/")
